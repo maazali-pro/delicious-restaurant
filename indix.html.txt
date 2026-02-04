@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Delicious Restaurant</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.overlay{
+    background: rgba(0,0,0,0.7);
+    min-height: 100vh;
+}
+
+header{
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.container{
+    width:85%;
+    margin:auto;
+    padding:20px;
+}
+
+h2{
+    color:white;
+    text-align:center;
+    margin:30px 0 20px;
+}
+
+.menu{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
+}
+
+.item{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    text-align:center;
+    transition: all 0.4s ease;
+    cursor:pointer;
+}
+
+.item img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.item:hover{
+    transform: scale(1.08);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.item h3{
+    padding:10px 0 5px;
+    color:#b22222;
+}
+
+.price{
+    padding-bottom:15px;
+    font-weight:bold;
+}
+
+/* ORDER BUTTON */
+.order-btn{
+    display:inline-block;
+    margin:15px auto 20px;
+    padding:10px 25px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.order-btn:hover{
+    background:#1ebc5a;
+}
+
+/* CONTACT */
+.contact{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.contact p{
+    font-size:18px;
+    margin:10px 0;
+}
+
+footer{
+    text-align:center;
+    color:white;
+    padding:15px;
+    background:#000;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+<div class="overlay">
+
+<header>
+    <h1>🍽️ Delicious Restaurant</h1>
+    <p>Fresh • Tasty • Quality Food</p>
+</header>
+
+<div class="container">
+
+<h2>Our Menu</h2>
+
+<div class="menu">
+
+<div class="item">
+<img src="https://via.placeholder.com/400x300/ffcc99/000000?text=Chicken+Biryani" alt="Chicken Biryani">
+<h3>Chicken Biryani</h3>
+<p class="price">PKR 350</p>
+<a class="order-btn" href="https://wa.me/923497638134" target="_blank">Order Now</a>
+</div>
+
+<div class="item">
+<img src="https://via.placeholder.com/400x300/ffcc99/000000?text=Beef+Biryani" alt="Beef Biryani">
+<h3>Beef Biryani</h3>
+<p class="price">PKR 400</p>
+<a class="order-btn" href="https://wa.me/923497638134" target="_blank">Order Now</a>
+</div>
+
+<div class="item">
+<img src="https://via.placeholder.com/400x300/ffcc99/000000?text=Chicken+Karahi" alt="Chicken Karahi">
+<h3>Chicken Karahi</h3>
+<p class="price">PKR 1200</p>
+<a class="order-btn" href="https://wa.me/923497638134" target="_blank">Order Now</a>
+</div>
+
+<div class="item">
+<img src="https://via.placeholder.com/400x300/ffcc99/000000?text=Mutton+Karahi" alt="Mutton Karahi">
+<h3>Mutton Karahi</h3>
+<p class="price">PKR 1800</p>
+<a class="order-btn" href="https://wa.me/923497638134" target="_blank">Order Now</a>
+</div>
+
+<div class="item">
+<img src="https://via.placeholder.com/400x300/ffcc99/000000?text=Chicken+Handi" alt="Chicken Handi">
+<h3>Chicken Handi</h3>
+<p class="price">PKR 1300</p>
+<a class="order-btn" href="https://wa.me/923497638134" target="_blank">Order Now</a>
+</div>
+
+<div class="item">
+<img src="https://via.placeholder.com/400x300/ffcc99/000000?text=Chicken+Qorma" alt="Chicken Qorma">
+<h3>Chicken Qorma</h3>
+<p class="price">PKR 1100</p>
+<a class="order-btn" href="https://wa.me/923497638134" target="_blank">Order Now</a>
+</div>
+
+</div>
+
+<h2>Contact Us</h2>
+<div class="contact">
+    <p>📞 Phone: <strong>0349-7638134</strong></p>
+    <p>📧 Email: <strong>maazali009987@gmail.com</strong></p>
+    <a class="order-btn" href="https://wa.me/923497638134" target="_blank">Order on WhatsApp</a>
+</div>
+
+</div>
+</div>
+
+<footer>
+© 2026 Delicious Restaurant | All Rights Reserved
+</footer>
+
+</div>
+</body>
+</html>
